@@ -963,6 +963,186 @@ header button:hover {
     background: #000;
 }
 
+.deal {
+    width: 1905px;
+    height: 1128px;
+    background: #000;
+}
+
+.deal h1 {
+    color: #FFF;
+    padding-top: 140px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.deal .deal-p {
+    color: #fff;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 52px;
+    margin-left: 810px;
+    right: 24px;
+    line-height: normal;
+}
+
+.deal .deal-p2 {
+    color: #F5F5F5;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: -28px;
+    margin-left: 1010px;
+    line-height: normal;
+    opacity: 0.5;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.theme-icon {
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    margin-top: -25px;
+    margin-left: 925px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.theme-icon .ball {
+    background-color: #a8ff35;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.5s linear;
+}
+
+.checkbox:checked+.theme-icon .ball {
+    transform: translateX(24px);
+}
+
+.cardeal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Três colunas com largura igual */
+    gap: 10px;
+    margin-left: 199px;
+    /* Espaçamento entre os blocos */
+    justify-content: space-between;
+    margin-top: 40px;
+    /* Três colunas com largura igual */
+
+}
+
+.cardeal1,
+.cardeal3 {
+    width: 360px;
+    height: 640px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    border-radius: 16px;
+    background: #FAFAFA;
+    /* Adapte as cores conforme necessário */
+    padding: 20px;
+}
+
+.cardeal1 h1 {
+    color: #000;
+    margin-top: -130px;
+    margin-left: -182px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.cardeal1 p {
+    color: #000;
+    margin-top: 8px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.cardeal1 .line {
+    margin-top: 32px;
+    width: 296px;
+    height: 1px;
+    opacity: 0.2;
+    background: #000;
+}
+
+.value strong {
+    color: #000;
+    margin-top: 32px;
+    margin-left: 45px;
+    font-family: Roboto;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    /* 64px */
+}
+
+.value h1 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 18px */
+    /* 18px */
+}
+
+.icon-text-container {
+    display: flex;
+    margin-top: 41px;
+    align-items: center;
+}
+
+/* Estilos para o ícone */
+.icon-text-container i {
+    margin-right: 8px;
+    font-size: 24px;
+    /* Tamanho do ícone */
+    margin-bottom: 8px;
+    /* Espaçamento à direita do ícone */
+}
+
+.cardeal2 {
+    width: 360px;
+    height: 640px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    border-radius: 16px;
+    background: #A8FF35;
+}
+
+
 .email {
     width: 1905px;
     height: 539px;
@@ -1032,7 +1212,7 @@ footer .logo img {
     width: 40px;
     height: 40px;
     margin-left: 80.68px;
-    margin-top: 36px;
+    margin-top: 20px;
     flex-shrink: 0;
 }
 
@@ -1041,14 +1221,14 @@ footer .logo span {
     text-align: center;
     font-family: Inter;
     font-size: 24px;
-    margin-top: 31px;
+    margin-top: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
 }
 
 footer .nav {
-    margin-top: 50px;
+    margin-top: 41px;
     margin-right: 186px;
     list-style: none;
     margin: 0;
@@ -1057,7 +1237,7 @@ footer .nav {
 }
 
 footer .nav li {
-    margin-top: 36px;
+    margin-top: 20px;
     margin-left: 40px;
 }
 
