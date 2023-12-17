@@ -2,16 +2,26 @@
 <html lang="en">
 
 <head>
+
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link -->
     <link rel="icon" type="image/png" href="img/Fav-32px.png" type="image/png">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https
+://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Findtrend</title>
 </head>
 
 <body>
+    <div class="overlay"></div>
+    <!-- Header -->
     <header>
         <div class="container">
             <div class="logo">
@@ -19,16 +29,16 @@
                 <span>Findtrend</span>
             </div>
             <nav>
-                <a href="">Tabs</a>
-                <a href="">Clients</a>
-                <a href="">Integration</a>
-                <a href="">Pricing</a>
+                <a href="#tabs">Tabs</a>
+                <a href="#clients">Clients</a>
+                <a href="#integration">Integration</a>
+                <a href="#pricing">Pricing</a>
             </nav>
             <button>Join us</button>
 
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <!-- Checkbox para controlar o dropdown -->
             <label for="menu-toggle" class="menu-icon"></label>
+            <label for="menu-toggle" class="menu-transparent"></label>
             <!-- Rótulo para o ícone do menu (hamburguer) -->
             <div class="logo">
                 <!-- Seu logotipo -->
@@ -37,16 +47,17 @@
                 <!-- Seus links de navegação -->
             </nav>
             <div class="menu-dropdown">
-                <a href="#">Tabs</a>
-                <a href="#">Clients</a>
-                <a href="#">Integration</a>
-                <a href="#">Pricing</a>
+                <a href="#tabs">Tabs</a>
+                <a href="#clients">Clients</a>
+                <a href="#integration">Integration</a>
+                <a href="#pricing">Pricing</a>
                 <button class="joinus">Join us</button>
 
                 <!-- Outros itens do menu -->
             </div>
     </header>
 
+    <!-- Home -->
     <section class="home">
         <div>
             <h1 class="title">Minimize your tabs. <br> Find the trends</h1>
@@ -56,7 +67,7 @@
                 Get Started 🔥
             </button>
             <img src="img/arrow white.svg" alt="" class="arrow">
-            <p class="img/arrow-text">All research <br> start from here</p>
+            <p class="arrow-text">All research <br> start from here</p>
 
             <div class="ret">
                 <div class="retback">
@@ -95,10 +106,13 @@
         </div>
     </section>
 
-    <section class="greenn">
+    <!-- Green Section-->
+    <section class="greenn" id="tabs">
         <div class="backgroundgreen"></div>
         <h1 class="titletwo">Open new tabs is hard</h1>
         <div class="card-green">
+            <img src="img/Arrow 4.svg" alt="" class="arrow2">
+            <p class="arrow-text2">You just need <br> one tab now</p>
             <div class="retangle">
                 <img src="img/Vector.svg" alt="">
                 <h2>Findtrend - Elon Musk</h2>
@@ -107,10 +121,13 @@
                 </div>
             </div>
         </div>
+        <img src="img/Arrow 4.svg" alt="" class="arrow3">
+        <p class="arrow-text3">solution for <br> discover a trend</p>
         <p>A solution for your browser tabs and don’t make your device get slower over time. <br> Get ease and faster to
             discover a trend with just one tab.</p>
     </section>
 
+    <!-- Function-->
     <section class="function">
         <h1 class="h1">Findtrend helps you to increase your</h1>
         <h1 class="h2">productivity and reduce your computer's</h1>
@@ -118,7 +135,8 @@
         <h1 class="h4"><strong class="strongg">fulfill your daily browsing needs.</strong></h1>
     </section>
 
-    <section class="companys">
+    <!-- Company's-->
+    <section class="companys" id="clients">
         <h1> Findtrend make +1000 Startup grow</h1>
         <div class="cards">
             <div class="card">
@@ -172,7 +190,8 @@
         </div>
     </section>
 
-    <section class="social">
+    <!-- Social -->
+    <section class="social" id="integration">
         <h1>All platform connect to Findtrend</h1>
         <div class="social-cards">
             <div class="social-card">
@@ -208,7 +227,8 @@
         <button class="viewM">View More Trend</button>
     </section>
 
-    <section class="deal">
+    <!-- Deal -->
+    <section class="deal" id="pricing">
         <h1>Get your best deal</h1>
         <p class="deal-p">Monthly</p>
         <div>
@@ -218,12 +238,18 @@
             </label>
         </div>
         <p class="deal-p2">Yearly</p>
+        <img src="img/arrow white.svg" alt="" class="arrow4">
+        <p class="arrow-text4">Save 10% <br> per month</p>
         <div class="cardeal">
             <div class="cardeal1">
                 <h1>Personal</h1>
                 <p>Special first packet for all</p>
                 <div class="line"></div>
-                <h1 class="value"><strong>$8</strong>/Month</h1>
+                <div class="value-month">
+                    <h1 class="value"><strong id="contador">$8</strong>
+                        <p> /Month</p>
+                    </h1>
+                </div>
 
                 <div class="icon-text-container">
                     <!-- Ícone do usuário e texto -->
@@ -240,32 +266,141 @@
                     <i class="fa fa-check"></i>
                     <p style="margin: 0;">5 Days group page saved</p>
                 </div>
+                <button class="sft">Start Free Trial</button>
             </div>
-            <div class="cardeal2"></div>
-            <div class="cardeal3"></div>
+            <div class="cardeal2">
+                <h1>Regular</h1>
+                <p>Recommended for personal pro</p>
+                <div class="linee"></div>
+                <div class="value-month2">
+                    <h1 class="value2"><strong id="valor2">$20</strong>
+                        <p>/Month</p>
+                    </h1>
+                </div>
+
+                <div class="icon-text-container2">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">Up to 15 page each group</p>
+                </div>
+                <div class="icon-text-container2">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">Download page up to 20 page</p>
+                </div>
+                <div class="icon-text-container2">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">Up to 10 group page</p>
+                </div>
+                <div class="icon-text-container2">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">5 15 Days group page saved</p>
+                </div>
+                <button class="sft2">Start Free Trial</button>
+            </div>
+            <div class="cardeal3">
+                <h1>Premium</h1>
+                <p>Packet for Startup & Company</p>
+                <div class="lineee"></div>
+                <div class="value-month3">
+                    <h1 class="value3"><strong>$48</strong>
+                        <p>/Month</p>
+                    </h1>
+                </div>
+
+                <div class="icon-text-container3">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">Unlimited group pages</p>
+                </div>
+                <div class="icon-text-container3">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">Unlimited download page</p>
+                </div>
+                <div class="icon-text-container3">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">Unlimited page each group</p>
+                </div>
+                <div class="icon-text-container3">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">Customize sorting group pages</p>
+                </div>
+                <div class="icon-text-container3">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">Customize group page name</p>
+                </div>
+                <div class="icon-text-container3">
+                    <!-- Ícone do usuário e texto -->
+                    <i class="fa fa-check"></i>
+                    <p style="margin: 0;">30 Days group page saved</p>
+                </div>
+                <button class="sft3">Start Free Trial</button>
+            </div>
         </div>
     </section>
 
+    <!-- Email -->
     <section class="email">
         <h1 class="blacks">Join us on email for <br></h1>
         <h1 class="strong">more trending topics</h1>
         <button class="buttonem">Join Now</button>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="logo">
             <img src="img/Vector (1).svg" class="logo" alt="Logo Spider Man 2">
             <span>Findtrend</span>
         </div>
         <ul class="nav">
-            <li> <a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms and Conditions</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="#" class="a1">Privacy Policy</a></li>
+            <li><a href="#" class="a2">Terms and Conditions</a></li>
+            <li><a href="#" class="a3">Contact Us</a></li>
+            <li><a href="#" class="a4">Careers</a></li>
         </ul>
     </footer>
 
+    <!-- JavaScript -->
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Ao clicar nos links de navegação
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 800); // Tempo de duração da animação (800ms no exemplo)
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $('.menu-icon').on('click', function () {
+                $('.menu-toggle').prop('checked', !$('.menu-toggle').prop('checked')); // Alterna o estado do toggle checkbox
+                $('.menu-dropdown').slideToggle(1000); // Mostra ou esconde o menu dropdown com animação de deslize (500ms)
+                if ($('.menu-toggle').is(':checked')) {
+                    $('.menu-dropdown').slideDown(250); // Mostra o menu dropdown com animação de deslize de cima para baixo (500ms)
+                } else {
+                    $('.menu-dropdown').slideUp(250); // Oculta o menu dropdown com animação de deslize de cima para baixo (500ms)
+                }
+            });
+
+            $('.menu-dropdown a').on('click', function () {
+                $('.menu-toggle').prop('checked', false); // Fecha o menu dropdown quando um item de navegação é clicado
+                $('.menu-dropdown').slideUp(500); // Oculta o menu dropdown com animação de deslize para cima (500ms)
+            });
+        });
+    </script>
 </body>
 
 </html>
